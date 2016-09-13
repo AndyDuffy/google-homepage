@@ -6,7 +6,7 @@
 	text-align: center;
 }
 img {
-    
+
     width: 40%;
 }
 
@@ -19,4 +19,34 @@ input {
 	font-family: sans-serif;
 	font-size: 18;
 	width: 200px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: light grey;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }
