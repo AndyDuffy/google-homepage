@@ -1,0 +1,22 @@
+.center {
+    margin: 0 auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+	text-align: center;
+}
+img {
+    
+    width: 40%;
+}
+
+img, input	{
+	margin: auto;
+}
+-
+input {
+	color: grey;
+	font-family: sans-serif;
+	font-size: 18;
+	width: 200px;
+}
