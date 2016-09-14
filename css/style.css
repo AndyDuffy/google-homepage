@@ -1,52 +1,20 @@
-.center {
+    .center {
     margin: 0 auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-	text-align: center;
+    text-align: center;
 }
 img {
+    padding-top: 15%;
+    padding-left: auto;
 
-    width: 40%;
 }
-
-img, input	{
-	margin: auto;
-}
--
 input {
-	color: grey;
-	font-family: sans-serif;
-	font-size: 18;
-	width: 200px;
-}
+    margin-top: 25px;
+    width: 570px;
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: light grey;
-    top: 0;
-    width: 100%;
+  border: 1px solid lightgrey;
+  height: 37px;
 }
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
+.footer{
+    background-color: lightgrey;
+    position: fix
 }
