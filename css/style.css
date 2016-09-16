@@ -1,20 +1,103 @@
-    .center {
+/*Center div - center image, search box and buttons*/
+
+.center {
     margin: 0 auto;
     text-align: center;
 }
+
+
+/* Move logo image down the page*/
+
 img {
     padding-top: 15%;
     padding-left: auto;
-
 }
+
+.searchButton {
+    padding: 1em 1.5em 1em 1.5em;
+    border: none;
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #757575;
+    width: 12%;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+li.signinButton {
+    background-color: lightblue;
+    font-weight: bold;
+    color: white;
+    width: 12%;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #757575
+}
+
+a:hover {
+    text-decoration: underline
+}
+
 input {
-    margin-top: 25px;
     width: 570px;
-
-  border: 1px solid lightgrey;
-  height: 37px;
+    border: 1px solid lightgrey;
+    height: 37px;
 }
-.footer{
-    background-color: lightgrey;
-    position: fix
+
+input:hover {
+    border: 1px solid darkgrey;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid #09C;
+    outline: none;
+}
+
+input[type=text] {
+    background-image: url(../img/microphone.png);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: right;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.header {
+    position: fixed;
+    margin-left: 0;
+    padding: 0px 15px 5px 15px;
+    outline: none;
+    top: 0;
+    height: 35px;
+    width: 100%;
+}
+.footer {
+    background-color: #f2f2f2;
+    position: fixed;
+    margin-left: 0;
+    padding: 0px 15px 5px 15px;
+    outline: none;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
 }
