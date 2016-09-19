@@ -1,20 +1,76 @@
 /*Center div - center image, search box and buttons*/
-
 .center {
     margin: 0 auto;
     text-align: center;
+
+}
+body {
+        min-width: 250px;
+}
+
+/* navbar list style */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* navbar links */
+li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #757575;
+}
+
+/* navbar list font*/
+ul li {
+    float: right;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+}
+
+/* navbar hover behaviour */
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: fixed;
+    margin-left: 15px;
+    top: 10px;
+    width: 98%;
+}
+
+/* add apps icon to header */
+.header ul li:nth-child(2) {
+    background: url(../img/applications.png)no-repeat 1px 7px;
+}
+
+/* signin Button on header */
+.signinButton {
+    background-color: #4285f4;
+    font-weight: bold;
+    color: white;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px 3px;
+    margin: 0px 4px 4px 0px;
 }
 
 
-/* Move logo image down the page*/
-
+/* Move google logo image down the page*/
 img {
     padding-top: 15%;
     padding-left: auto;
 }
 
+/* Search */
 .searchButton {
-    padding: 1em 1.5em 1em 1.5em;
+    padding: 1px 2px 1px 2px;
     border: none;
     background-color: #f2f2f2;
     font-weight: bold;
@@ -26,53 +82,22 @@ img {
     text-align: center;
 }
 
-li.signinButton {
-    background-color: lightblue;
-    font-weight: bold;
-    color: white;
-    width: 12%;
-    font-family: arial, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-ul li {
-    float: right;
-    font-size: 13px;
-    font-family: arial, sans-serif;
-}
-.footer ul li:nth-child(-n+3) {
-    float: left;
-}
-li a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: #757575
-}
-a:hover {
-    text-decoration: underline
-}
 input {
     width: 570px;
     border: 1px solid lightgrey;
     height: 37px;
 }
+
 input:hover {
     border: 1px solid darkgrey;
     outline: none;
 }
+
 input:focus {
     border: 1px solid #09C;
     outline: none;
 }
+
 input[type=text] {
     background-image: url(../img/microphone.png);
     background-repeat: no-repeat;
@@ -81,22 +106,7 @@ input[type=text] {
     padding-left: 10px;
     font-size: 16px;
 }
-.header {
-    /*position: fixed;
-    margin-left: 0;
-    padding: 0px 30px 5px;
-    outline: none;
-    top: 0;
-    height: 35px;
-    width: 100%;
-    */
-    background-image: url(../img/microphone.png);
-    background-repeat: no-repeat;
-    background-size: 24px;
-    background-position: right;
-    padding-left: 10px;
-    font-size: 16px;
-}
+
 .footer {
     background-color: #f2f2f2;
     position: fixed;
@@ -105,5 +115,17 @@ input[type=text] {
     outline: none;
     bottom: 0;
     height: 35px;
-    width: 100%;
+    width: 98%;
+}
+
+/*container within footer to pad right hand side
+.foot, .head {
+    width: 90;
+    margin-left: 0;
+    margin-right: 25px;
+}*/
+
+/*float first three footer items to left, rest default right */
+.footer ul li:nth-child(-n+3) {
+    float: left;
 }
