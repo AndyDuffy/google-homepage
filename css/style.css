@@ -2,10 +2,6 @@
 .center {
     margin: 0 auto;
     text-align: center;
-
-}
-body {
-        min-width: 250px;
 }
 
 /* navbar list style */
@@ -117,13 +113,6 @@ input[type=text] {
     height: 35px;
     width: 98%;
 }
-
-/*container within footer to pad right hand side
-.foot, .head {
-    width: 90;
-    margin-left: 0;
-    margin-right: 25px;
-}*/
 
 /*float first three footer items to left, rest default right */
 .footer ul li:nth-child(-n+3) {
